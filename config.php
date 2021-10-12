@@ -31,7 +31,7 @@ class Config implements ArrayAccess
         $this->hashmap[$offset] = $value;
     }
 
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->hashmap[$offset]);
     }
